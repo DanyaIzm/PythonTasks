@@ -28,6 +28,7 @@ class SoftwareDeveloper(Human):
         super().__init__(name, gender)
         self.programming_language = programming_language
 
+    # [v] Полиморфизм
     def introduce(self) -> None:
         print(
             f"Привет, я {self.gender.value}, меня зовут {self.name}. Я пишу на {self.programming_language}"
