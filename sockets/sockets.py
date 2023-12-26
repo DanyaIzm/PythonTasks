@@ -4,6 +4,8 @@ from abc import ABC, abstractmethod
 from typing import List
 from config import PORT
 
+# TODO: refactor - architecture is real shit
+
 
 class SocketDisconnected(Exception):
     ...
