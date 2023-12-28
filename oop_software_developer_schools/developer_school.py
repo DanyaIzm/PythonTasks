@@ -7,9 +7,8 @@ class DeveloperSchool:
         self._programming_language = programming_language
         self._number_of_courses = 0
 
-    def teach(self, human: Human):
+    def teach(self, human: Human) -> SoftwareDeveloper:
         self._number_of_courses += 1
-        print(f"Был обучен {self._number_of_courses} студент")
 
         return SoftwareDeveloper(human.name, human.gender, self._programming_language)
 
