@@ -3,7 +3,7 @@ from human import Human, SoftwareDeveloper
 
 
 # [v] Паттерн "декоратор"
-class DebugSchool(DeveloperSchool):
+class DebugSchool:
     def __init__(self, developer_school: DeveloperSchool) -> None:
         # [v] Композиция объектов
         self._developer_school = developer_school
